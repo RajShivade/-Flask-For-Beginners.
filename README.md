@@ -1,6 +1,6 @@
 # Flask-Fundamentals : 
 
-# Day 0 – Flask Basics & Python Modules
+# Day 0 – Flask Basics & Python Modules.
 ## Overview
 
 Day 0 covers the basic foundation before starting Flask:
@@ -39,7 +39,7 @@ main.py → Imports and executes function
 
  - Backend basics
 
-# Day 1 – First Flask Application
+# Day 1 – First Flask Application.
 ## Overview
 
 Built the first basic Flask app with routes and server execution.
@@ -78,7 +78,7 @@ Built the first basic Flask app with routes and server execution.
 
  - Debug mode
 
-# Day 2 – HTTP Methods & Routing
+# Day 2 – HTTP Methods & Routing.
 ## Overview
 
 Learned routing with specific HTTP methods (GET & POST).
@@ -117,7 +117,7 @@ Learned routing with specific HTTP methods (GET & POST).
 
  - Endpoint handling
 
-# Day 3 – Templates & Query Parameters
+# Day 3 – Templates & Query Parameters.
 ## Overview
 
 Connected Flask with HTML template and handled user input via URL query parameters.
@@ -165,7 +165,7 @@ Connected Flask with HTML template and handled user input via URL query paramete
 
  - request.args
 
-# Day 4 – Forms Handling (POST)
+# Day 4 – Forms Handling (POST).
 ## Overview
 
 Created a user form and handled POST data in Flask with result display.
