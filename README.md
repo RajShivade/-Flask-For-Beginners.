@@ -1,7 +1,7 @@
 # Flask-Fundamentals : 
 
 # Day 0 – Flask Basics & Python Modules.
-## Overview
+## Overview:
 
 Day 0 covers the basic foundation before starting Flask:
 
@@ -11,7 +11,7 @@ Module importing
 
 Intro to Client–Server architecture
 
-## Files
+## Files:
     
 addition_function.py → Contains add function 
     
@@ -21,7 +21,7 @@ main.py → Imports and executes function
     
     main
 
-## Theory
+## Theory:
 
  - Flask → Backend web framework
 
@@ -29,7 +29,7 @@ main.py → Imports and executes function
 
  - Follows Client–Server architecture
 
-## Learning
+## Learning:
 
  - Functions
 
@@ -40,15 +40,15 @@ main.py → Imports and executes function
  - Backend basics
 
 # Day 1 – First Flask Application.
-## Overview
+## Overview:
 
 Built the first basic Flask app with routes and server execution.
 
-## File
+## File:
 
  - app.py → Main Flask application
 
-## Key Code
+## Key Code:
     from flask import Flask
     app = Flask(__name__)
     
@@ -62,13 +62,13 @@ Built the first basic Flask app with routes and server execution.
     
     app.run(debug=True)
 
-## Routes
+## Routes:
 
  - / → Hello User
 
  - /add → Returns sum (9)
 
-## Concepts Learned
+## Concepts Learned:
 
  - Flask import & initialization
 
@@ -79,17 +79,17 @@ Built the first basic Flask app with routes and server execution.
  - Debug mode
 
 # Day 2 – HTTP Methods & Routing.
-## Overview
+## Overview:
 
 Learned routing with specific HTTP methods (GET & POST).
 
-## File
+## File:
 
  - main.py → Flask routes with methods 
 
         main
 
-## Key Code
+## Key Code:
     from flask import Flask
     app = Flask(__name__)
     
@@ -103,13 +103,13 @@ Learned routing with specific HTTP methods (GET & POST).
     
     app.run(debug=True)
 
-## Routes
+## Routes:
 
  - / → POST → Home Page
 
  - /about_us → GET → About Page
 
-## Concepts Learned
+## Concepts Learned:
 
  - HTTP Methods (GET, POST)
 
@@ -118,11 +118,11 @@ Learned routing with specific HTTP methods (GET & POST).
  - Endpoint handling
 
 # Day 3 – Templates & Query Parameters.
-## Overview
+## Overview:
 
 Connected Flask with HTML template and handled user input via URL query parameters.
 
-## Files
+## Files:
 
  - main.py → Flask backend logic 
 
@@ -132,7 +132,7 @@ Connected Flask with HTML template and handled user input via URL query paramete
 
         home
 
-## Key Concept
+## Key Concept:
     @app.route("/")
     def index():
         return render_template('home.html')
@@ -141,7 +141,7 @@ Connected Flask with HTML template and handled user input via URL query paramete
     b = request.args.get("B")
     return str(int(a)+int(b))
 
-## Functionality
+## Functionality:
 
  - Form takes two numbers
 
@@ -155,7 +155,7 @@ Connected Flask with HTML template and handled user input via URL query paramete
 
     /add?A=5&B=3 → 8
 
-## Concepts Learned
+## Concepts Learned:
 
  - render_template()
 
@@ -166,11 +166,11 @@ Connected Flask with HTML template and handled user input via URL query paramete
  - request.args
 
 # Day 4 – Forms Handling (POST).
-## Overview
+## Overview:
 
 Created a user form and handled POST data in Flask with result display.
 
-## Files
+## Files:
  - app.py → Backend form handling 
 
         app
@@ -183,13 +183,13 @@ Created a user form and handled POST data in Flask with result display.
 
         result
 
-## Key Concept
+## Key Concept:
     @app.route('/submit', methods=['POST'])
     def submit_form():
         name = request.form.get('name')
         return render_template('result.html', name=name)
 
-## Form Features
+## Form Features:
 
  - Name & Age
 
@@ -201,7 +201,7 @@ Created a user form and handled POST data in Flask with result display.
 
  - Skills (Checkbox)
 
-## Concepts Learned
+## Concepts Learned:
 
  - POST method
 
